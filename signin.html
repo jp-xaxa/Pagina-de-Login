@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./assets/Vector.ico" type="image/x-icon" />
+    <title>Pagina de Login</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="page" class="flex">
+      <div>
+        <header>
+          <img src="./assets/logo.svg" class="flex" />
+        </header>
+        <main>
+          <h1>Acesse a plataforma</h1>
+          <p>
+            Faça login ou registre-se para começar a construir seus projetos
+            ainda hoje.
+          </p>
+          <form>
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                required
+                placeholder="Digite seu e-mail"
+              />
+              <span class="error"></span>
+            </div>
+            <div class="input-wrapper">
+              <div class="label-wrapper flex">
+                <label for="senha"> Senha </label>
+                <a href="#"> Esqueceu a senha? </a>
+              </div>
+              <input
+                id="senha"
+                type="password"
+                name="password"
+                required
+                placeholder="Digite sua senha"
+              />
+              <img
+                onclick="togglePassword()"
+                class="eye"
+                src="./assets/eye-off.svg"
+                alt=""
+              />
+              <img
+                onclick="togglePassword()"
+                class="eye hide"
+                src="./assets/eye-on.svg"
+                alt=""
+              />
+              <span class="error"></span>
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <div class="creat-account">
+              Ainda não tem conta?
+              <a href="#"> Inscreva-se!</a>
+            </div>
+          </form>
+        </main>
+      </div>
+      <img src="./assets/bg.png" alt="" />
+    </div>
+  </body>
+</html>
